@@ -10,7 +10,7 @@ AllCops:
   DisplayCopNames: true
 
 Layout/LineLength:
-  Max: 120
+  Max: 300
 Metrics/MethodLength:
   Include:
     - "app/controllers/*"
@@ -24,7 +24,7 @@ Metrics/AbcSize:
 Metrics/ClassLength:
   Max: 150
 Metrics/BlockLength:
-  ExcludedMethods: ["describe"]
+  ExcludedMethods: ['describe']
   Max: 30
 
 Style/Documentation:
@@ -47,6 +47,8 @@ Layout/ExtraSpacing:
 Layout/MultilineMethodCallIndentation:
   Enabled: true
   EnforcedStyle: indented
+Layout/EndOfLine:
+  EnforcedStyle: crlf
 Lint/RaiseException:
   Enabled: false
 Lint/StructNewOverride:
@@ -57,3 +59,5 @@ Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
   Enabled: false
+Style/EndOfLine:
+  EnforcedStyle: crlf
