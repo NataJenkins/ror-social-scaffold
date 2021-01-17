@@ -8,5 +8,4 @@ class Friendship < ActiveRecord::Base
                        user_id: friend_id,
                        confirmed: true)
   end
-
 end

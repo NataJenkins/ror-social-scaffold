@@ -1,3 +1,4 @@
+# rubocop:disable Style/IdenticalConditionalBranches
 class FriendshipsController < ApplicationController
   def new
     @friendship = Friendship.new
@@ -43,8 +44,7 @@ class FriendshipsController < ApplicationController
   private
 
   def params_friendship
-
     params.require(:friendship).permit(:friend_id)
   end
-
 end
+# rubocop:enable Style/IdenticalConditionalBranches
