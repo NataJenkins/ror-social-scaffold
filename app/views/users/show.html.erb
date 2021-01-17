@@ -5,5 +5,10 @@
     <ul class="posts">
       <%= render @posts %>
     </ul>
+    <ul>
+      <% received_request(@friend_requests) %>
+    </ul>
+    <% session[:answer] = params[:id] %>
+    <%= (link_to "Add friend", user_friendships_path(params[:id]), style: 'color: #0000FF;') %>
   </article>
 </section>
