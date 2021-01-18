@@ -25,7 +25,7 @@ gem 'jbuilder', '~> 2.5'
 group :test, :development do
   gem 'rspec-rails', '~> 4.0.0'
 end
-gem "capybara"
+gem 'capybara'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
