@@ -2,4 +2,5 @@
   <ul class="users-list">
     <%= render @users %>
   </ul>
+  <% received_request(current_user.friend_requests) %>
 </section>
