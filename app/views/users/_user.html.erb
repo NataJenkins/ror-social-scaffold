@@ -1,14 +1,16 @@
-<li>
+<li style="display:flex;">
   Name: <%= user.name %>
   <span class="profile-link">
     <%= link_to 'See Profile',  user_path(user), class: 'profile-link' %>
   </span>
-</li>
 
-<%= form_with model: @friendship, url: user_friendships_path(current_user) do |f| %>
-  <div class="field">
-    <%= f.label :friend_id %><br />
-    <%= f.hidden_field :friend_id, :value => user.id %>
-    <%= f.submit 'friends!' %>
-  </div>
-<% end %>
+
+    <%= form_with model: @friendship, url: user_friendships_path(current_user) do |f| %>
+    <div class="field">
+      <%= f.label :friend_id %><br />
+      <%= f.hidden_field :friend_id, :value => user.id %>
+      <%= f.submit 'friends!' %>
+    </div>
+    <% end %>
+
+</li>

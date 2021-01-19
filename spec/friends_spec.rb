@@ -68,5 +68,4 @@ RSpec.describe 'friends', type: :feature do
   it 'works' do
     expect(true).to be(true)
   end
-
 end
