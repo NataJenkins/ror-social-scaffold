@@ -6,6 +6,6 @@ module PostHelper
   end
 
   def if_friend(lol, lists)
-    render lol if lists.include?(lol.user_id)
+    render lol if lists.include?(lol.user_id) || lol.user_id == current_user.id
   end
 end
