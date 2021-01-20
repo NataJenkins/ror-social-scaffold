@@ -1,0 +1,8 @@
+<p> Add friend </p>
+<%= form_with model: @friendship, url: user_friendships_path do |f| %>
+  <div class="field">
+    <%= f.label :friend_id %><br />
+    <%= f.hidden_field :friend_id, :value => session[:answer] %>
+    <%= f.submit 'friends!' %>
+  </div>
+<% end %>

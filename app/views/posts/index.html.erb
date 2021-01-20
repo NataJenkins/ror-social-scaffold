@@ -10,6 +10,14 @@
     Recent posts
   </h3>
   <ul class="posts">
-    <%= render @timeline_posts %>
+    <% lists = Array.new%>
+    <% friends_user = current_user.friends %>
+    <% friends_user.each do |meme| %>
+      <% lists.push(meme.id) %>
+    <% end %>
+    <% @timeline_posts.each do |lol| %>
+      <%= if_friend(lol, lists) %>
+
+    <% end %>
   </ul>
 </article>

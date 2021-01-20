@@ -3,7 +3,19 @@
   <article class="timeline">
     <h3>Recent posts:</h3>
     <ul class="posts">
-      <%= render @posts %>
+
+      <% lists = Array.new%>
+      <% friends_user = current_user.friends %>
+      <% friends_user.each do |meme| %>
+        <% lists.push(meme.id) %>
+      <% end %>
+      <% if (lists.include? params[:id].to_i) || (current_user.id == params[:id].to_i) %>
+        <% @posts.each do |lol| %>
+          <%= render lol  %>
+        <% end %>
+
+      <% end %>
     </ul>
+    <% session[:answer] = params[:id] %>
   </article>
 </section>
