@@ -17,8 +17,5 @@
       <% end %>
     </ul>
     <% session[:answer] = params[:id] %>
-    <% if current_user.id != params[:id].to_i%>
-      <%= (link_to "Add friend", user_friendships_path(params[:id]), style: 'color: #0000FF;') %>
-    <% end %>
   </article>
 </section>
