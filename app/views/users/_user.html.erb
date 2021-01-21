@@ -9,15 +9,5 @@
     <% friends_user.each do |meme| %>
       <% lists.push(meme.id) %>
     <% end %>
-
-  <% if user.id != current_user.id && lists.exclude?(user.id) %>
-    <%= form_with model: @friendship, url: user_friendships_path(current_user) do |f| %>
-    <div class="field">
-      <%= f.label :friend_id %><br />
-      <%= f.hidden_field :friend_id, :value => user.id %>
-      <%= f.submit 'friends!' %>
-    </div>
-    <% end %>
-  <% end %>
-
+    <% lol(user, lists) %>
 </li>

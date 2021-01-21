@@ -29,5 +29,11 @@ module UserHelper
       end
     end
   end
+
+  def lol(user, lists)
+    if user.id != current_user.id && lists.exclude?(user.id)
+      render partial: "form", locals: { user: user, lists: lists }
+    end
+  end
 end
 # rubocop:enable Style/GuardClause
