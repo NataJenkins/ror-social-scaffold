@@ -22,10 +22,10 @@ module UserHelper
   end
 
   def if_include(lists)
-      if (lists.include? params[:id].to_i) || (current_user.id == params[:id].to_i)
-        @posts.each do |lol|
-          render lol
-        end
+    if (lists.include? params[:id].to_i) || (current_user.id == params[:id].to_i)
+      @posts.each do |lol|
+        render lol
       end
+    end
   end
 end
