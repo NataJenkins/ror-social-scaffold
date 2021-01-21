@@ -1,4 +1,3 @@
-# rubocop:disable Style/GuardClause
 module UserHelper
   def received_request(friend)
     if current_user.friend_requests.any?
@@ -22,16 +21,11 @@ module UserHelper
     end
   end
 
-  def if_include(lists)
-    if (lists.include? params[:id].to_i) || (current_user.id == params[:id].to_i)
-      @posts.each do |lol|
-        render lol
-      end
-    end
+  def if_include(lists, post1)
+    render post1 if (lists.include? params[:id].to_i) || (current_user.id == params[:id].to_i)
   end
 
   def lol(user, lists)
     render partial: 'form', locals: { user: user, lists: lists } if user.id != current_user.id && lists.exclude?(user.id)
   end
 end
-# rubocop:enable Style/GuardClause

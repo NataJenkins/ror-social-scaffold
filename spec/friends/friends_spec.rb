@@ -76,8 +76,6 @@ RSpec.describe 'friends', type: :feature do
     expect(page).to have_text("You didn't received any friend request yet.")
   end
 
-  
-
   it 'works' do
     expect(true).to be(true)
   end

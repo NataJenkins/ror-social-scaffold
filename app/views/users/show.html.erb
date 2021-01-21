@@ -9,7 +9,9 @@
       <% friends_user.each do |meme| %>
         <% lists.push(meme.id) %>
       <% end %>
-      <%= if_include(lists)%>
+      <% @posts.each do |lol2| %>
+        <%= if_include(lists, lol2)%>
+      <% end%>
     </ul>
     <% session[:answer] = params[:id] %>
   </article>
