@@ -65,6 +65,19 @@ RSpec.describe 'friends', type: :feature do
     expect(page).to have_text('Reject')
   end
 
+  scenario 'no requests' do
+    visit new_user_registration_path
+    fill_in 'Name', with: 'Nata'
+    fill_in 'Email', with: 'nata@nata'
+    fill_in 'Password', with: 'natanata'
+    fill_in 'Password confirmation', with: 'natanata'
+    click_on 'Sign up'
+    visit '/users'
+    expect(page).to have_text("You didn't received any friend request yet.")
+  end
+
+  
+
   it 'works' do
     expect(true).to be(true)
   end
