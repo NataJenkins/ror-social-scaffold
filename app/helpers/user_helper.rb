@@ -1,3 +1,4 @@
+# rubocop:disable Style/GuardClause
 module UserHelper
   def received_request(friend)
     if current_user.friend_requests.any?
@@ -29,3 +30,4 @@ module UserHelper
     end
   end
 end
+# rubocop:enable Style/GuardClause
