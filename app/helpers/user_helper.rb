@@ -20,4 +20,12 @@ module UserHelper
       concat content_tag(:li, "Waiting friend confirmation from  #{req.name}") unless current_user.friend?(req)
     end
   end
+
+  def if_include(lists)
+      if (lists.include? params[:id].to_i) || (current_user.id == params[:id].to_i)
+        @posts.each do |lol|
+          render lol
+        end
+      end
+  end
 end
