@@ -9,7 +9,7 @@
 
 ## Live Demo
 
-TBA
+https://socialmedianat.herokuapp.com/
 
 
 ## Getting Started
