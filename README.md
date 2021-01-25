@@ -9,7 +9,7 @@
 
 ## Live Demo
 
-TBA
+https://socialmedianat.herokuapp.com/
 
 
 ## Getting Started
@@ -65,13 +65,20 @@ Open `http://localhost:3000/` in your browser.
 
 > Tests will be added by Microverse students. There are no tests for initial features in order to make sure that students write all tests from scratch.
 
-### Deployment
-
-TBA
-
 ## Authors
 
-TBA
+👤 **Natalia Macias**
+
+- Github: [@NataJenkins](https://github.com/NataJenkins)
+- Twitter: [@NataJenkins](https://twitter.com/NataJenkins)
+- Linkedin: [linkedin Profile](https://www.linkedin.com/in/natalia-macias-a11a20187/)
+
+👤 **Mauricio Tabilo**
+
+- Github: [@Nexch](https://github.com/Nexch)
+- Twitter: [@@MfinchT](https://twitter.com/MfinchT)
+- Linkedin: [linkedin](https://www.linkedin.com/in/Nexch)
+
 
 ## 🤝 Contributing
 
@@ -82,12 +89,3 @@ Feel free to check the [issues page](issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-TBA
-
-## 📝 License
-
-TBA
-
